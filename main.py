@@ -406,7 +406,7 @@ try:
         # Why are you reading this?
         if message.content.startswith("[Code") or message.content.startswith("[code"):
             await message.channel.send(
-                "https://gitfront.io/r/GLHF-Goose/JCgaY8VzcZDi/Diccy-Bot/")
+                "https://github.com/GLHF-Goose/Diccy_Bot")
 
         if message.content.startswith("[RPS") or message.content.startswith("[rps"):
             time.sleep(1)
