@@ -13,6 +13,8 @@
 import pandas as pd
 import os
 import sys
+
+import key
 from keep_alive import keep_alive
 from lists import game_list
 from lists import help_list
@@ -638,7 +640,8 @@ try:
     # aws = aws.Send.AllData
 
     keep_alive()
-    client.run("ODE4MTEwMDEwODE0MTAzNTYz.GWhuPw.NBo4DQqmNHXXMGtmX4CZ2NrerKdIkSqfyf5qM0")
+    import key
+    client.run(key.key)
 
 # This whole ass things runs in a try loop,
 # If there is an error the bot just restarts itself
