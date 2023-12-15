@@ -6,6 +6,7 @@
 # 1.0.2 - Added to PC instead of replit.
 # 1.0.21 - Removed W I D E
 # 1.0.22 - Removed [Calculator
+# 1.0.23 - Removed [Code link
 
 # ToDo - Stop Praw printing error logs.
 
@@ -403,7 +404,7 @@ try:
         # Why are you reading this?
         if message.content.startswith("[Code") or message.content.startswith("[code"):
             await message.channel.send(
-                "This is now outdated, will add to github or something, idk? \n \n https://replit.com/@rlr123/Diccy-bot#main.py")
+                "https://gitfront.io/r/GLHF-Goose/JCgaY8VzcZDi/Diccy-Bot/")
 
         if message.content.startswith("[RPS") or message.content.startswith("[rps"):
             time.sleep(1)
