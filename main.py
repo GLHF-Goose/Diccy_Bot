@@ -243,7 +243,9 @@ try:
 
         if "[fiftyfifty" in message.content:
             # await message.channel.send("Y'all been too horny, no more tits.")
-            fiftyfifty = int(random.randint(0, 1))
+            await message.channel.send("Merry Christmas!")
+            fiftyfifty = 0
+            # fiftyfifty = int(random.randint(0, 1))
             if fiftyfifty == 0:
                 postable = False
                 while postable == False:
