@@ -243,9 +243,7 @@ try:
 
         if "[fiftyfifty" in message.content:
             # await message.channel.send("Y'all been too horny, no more tits.")
-            await message.channel.send("Merry Christmas!")
-            fiftyfifty = 0
-            # fiftyfifty = int(random.randint(0, 1))
+            fiftyfifty = int(random.randint(0, 1))
             if fiftyfifty == 0:
                 postable = False
                 while postable == False:
@@ -503,6 +501,13 @@ try:
                 await message.channel.send("What a dickhead, obviously his fault")
             if fiftyfifty == 2:
                 await message.channel.send("Racing incident, nobody's fault")
+
+        if message.content.startswith("F1 or CS") or message.content.startswith("F1 or CS?") or message.content.startswith("F1 or cs?") or message.content.startswith("f1 or cs?") or message.content.startswith("CS or F1?") or message.content.startswith("CS or F1"):
+            fiftyfifty = int(random.randint(0, 1))
+            if fiftyfifty == 0:
+                await message.channel.send("CS")
+            if fiftyfifty == 1:
+                await message.channel.send("F1")
 
         if "pepsi" in message.content:
             await message.channel.send("BEPIS")
