@@ -5,8 +5,10 @@
 # 1.0.1 - Added tits back to fiftyfifty
 # 1.0.2 - Added to PC instead of replit.
 # 1.0.21 - Removed W I D E
-# 1.0.22 - Removed [Calculator
-# 1.0.23 - Removed [Code link
+# 1.0.22 - Removed [Calculator as it was a genuine fuck off massive security flaw
+# 1.0.23 - Changed [Code link
+# 1.0.24 - Added CS or F1
+# 1.0.25 - Fixes and comments
 
 # ToDo - Stop Praw printing error logs.
 
@@ -51,6 +53,8 @@ try:
 
     word_counter = 1
     # Logs into reddit?
+    # These should probably be secret
+    # But if you really want to log into the random reddit account I created, go for it
     reddit = praw.Reddit(client_id='lVYaZUjxZFYp-tgY9O7nCA',
                          client_secret='A0OlprUR8a5WGa6EmKByWb0wgSYaSQ',
                          user_agent='PythonPraw')
@@ -176,7 +180,7 @@ try:
 
 
     # I absoloutlely am coding rock paper scissors
-    # in if statements. 100% a better way of oding this.
+    # in if statements. 100% a better way of doing this.
     def rps_result(player_1, player_2, player_1_result, player_2_result):
         if player_1_result == player_2_result:
             rps_result = "Draw!"
@@ -228,12 +232,19 @@ try:
     async def on_message(message):
         global hangman, letterinput, replied, alphabet
 
+# Uncomment for the bot to not reply to itself
+# This potentially means that the bot could reply to itself in an infinite loop
+# But also there is a slight chance that it gives itself the n-word pass.
+# The funny outweighs the potential flaws
         #   if message.author == client.user:
         #       return
+
         # states the truth
         if message.content.startswith("[1"):
             await message.channel.send("This is a very useless bot")
 
+# Random yes no when you ask it if something is gay
+# idk is this homophobic?
         if "gay?" in message.content and message.content.startswith("Is"):
             fiftyfifty = int(random.randint(0, 1))
             if fiftyfifty == 0:
@@ -338,6 +349,7 @@ try:
                 "This is a pro Ukrainian bot."
             )
 
+# Possibly makes an infinite messaging loop
         if message.content.startswith('[Repeatafterme'):
             to_repeat = message.content.split(' ', 1)[1]  # Get everything after the first space
             await message.channel.send(to_repeat)
@@ -502,6 +514,7 @@ try:
             if fiftyfifty == 2:
                 await message.channel.send("Racing incident, nobody's fault")
 
+# How do I separate this if statement onto multiple lines?
         if message.content.startswith("F1 or CS") or message.content.startswith("F1 or CS?") or message.content.startswith("F1 or cs?") or message.content.startswith("f1 or cs?") or message.content.startswith("CS or F1?") or message.content.startswith("CS or F1"):
             fiftyfifty = int(random.randint(0, 1))
             if fiftyfifty == 0:
@@ -516,6 +529,7 @@ try:
         if "nigger" in message.content or "nigga" in message.content:
             await message.add_reaction("😬")
 
+        # Best line of the whole thing
         if "farsley" in message.content:
             await message.add_reaction("🍺")
 
@@ -573,7 +587,7 @@ try:
                     postable = True
             await message.channel.send(url_cute)
 
-        # Posts an embeded post from the top 50 of r/197
+        # Posts an embeded post from the top 50 of r/196
         if message.content.startswith("@dailymeme") or message.content.startswith(
                 "@Dailymeme"):
             postable = False
@@ -647,6 +661,7 @@ try:
     # aws = aws.Send.AllData
 
     keep_alive()
+# Key is in a separate file stored locally so y'all can't steal it from github
     import key
     client.run(key.key)
 
