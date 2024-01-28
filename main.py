@@ -9,6 +9,7 @@
 # 1.0.23 - Changed [Code link
 # 1.0.24 - Added CS or F1
 # 1.0.25 - Fixes and comments
+# 1.0.26 - Fixed [3
 
 # ToDo - Stop Praw printing error logs.
 
@@ -337,7 +338,9 @@ try:
             await message.channel.send(answer_message)
 
         if message.content.startswith("[3"):
-            ("Any suggestions for this bot?")
+            await message.channel.send(
+                "Any suggestions for this bot?"
+            )
 
         if message.content.startswith("[4"):
             await message.channel.send(
