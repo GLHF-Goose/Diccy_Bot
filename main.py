@@ -10,6 +10,7 @@
 # 1.0.24 - Added CS or F1
 # 1.0.25 - Fixes and comments
 # 1.0.26 - Fixed [3
+# 1.0.27 - Added [cs that launches cs2 on my pc
 
 # ToDo - Stop Praw printing error logs.
 
@@ -33,6 +34,7 @@ import requests
 from bs4 import BeautifulSoup
 import webbrowser
 import logging
+import subprocess
 
 logging.basicConfig(filename='error_log.log', level=logging.DEBUG,
                     format='%(asctime)s %(levelname)s %(name)s %(message)s')
@@ -650,6 +652,10 @@ try:
         if message.content.startswith('[Check_Password_Strength'):
             await message.delete()
             await message.channel.send("Password has been logged, cheers for that.")
+
+        if message.content.startswith('[cs2') or message.content.startswith('[CS2') or message.content.startswith('[cs') or message.content.startswith('[CS'):
+            await message.channel.send("Launching CS2")
+            subprocess.call(r"C:\Program Files (x86)\Steam\Steam.exe -applaunch 730")
 
 
     # Yeah I gave up
