@@ -386,6 +386,9 @@ try:
         if message.content.startswith("[Game list"):
             await message.channel.send(game_list)
 
+        if message.content.startswith("[bpp"):
+            await message.channel.send("https://www.brokenpicturephone.com")
+
         if message.content.startswith("[Start") or message.content.startswith("[start"):
             global start_time
             start_time = time.time()
