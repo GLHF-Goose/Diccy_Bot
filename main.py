@@ -11,6 +11,7 @@
 # 1.0.25 - Fixes and comments
 # 1.0.26 - Fixed [3
 # 1.0.27 - Added [cs that launches cs2 on my pc
+# 1.0.28 - Added DM Jake
 
 # ToDo - Stop Praw printing error logs.
 
@@ -547,6 +548,12 @@ try:
             # Happy little accident
         if "[Myid" in message.content:
             await message.channel.send(message.author.id)
+
+        # This is just to message Jake for a funny
+        if "DM Jake" in message.content:
+            user_id = '490928844208078868'
+            user = await client.fetch_user(user_id)
+            await user.send("You cannot be a slut for 26 seconds")
 
         # One in a 5 thousand chance that u get an N-word pass
         if "" in message.content:
