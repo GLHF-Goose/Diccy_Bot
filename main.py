@@ -12,6 +12,7 @@
 # 1.0.26 - Fixed [3
 # 1.0.27 - Added [cs that launches cs2 on my pc
 # 1.0.28 - Added DM Jake
+# 1.0.29 - Changed DM Jake to UserID
 
 # ToDo - Stop Praw printing error logs.
 
