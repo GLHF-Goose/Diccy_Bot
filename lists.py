@@ -18,7 +18,8 @@ help_list = [
     "RPS Rules = Tells you the rules",
     "[Calculator = Does maths",
     "[Wikipedia = Gives a random wikipedia article",
-    "[Check_Password_Strength = Checks the strength of your password, out of 10."
+    "[Check_Password_Strength = Checks the strength of your password, out of 10.",
+    "[DM (User ID) (Message) = Sends the message to the user ID"
 ]
 
 game_list = [

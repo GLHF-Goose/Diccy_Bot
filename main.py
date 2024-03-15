@@ -550,10 +550,14 @@ try:
             await message.channel.send(message.author.id)
 
         # This is just to message Jake for a funny
-        if "DM Jake" in message.content:
-            user_id = '490928844208078868'
+        if message.content.startswith("[DM") or message.content.startswith("[dm"):
+            to_send = message.content
+            first_space_index = to_send.find(' ')  # Find the index of the first space
+            second_space_index = to_send.find(' ', first_space_index + 1)
+            user_id = to_send[first_space_index + 1:second_space_index]
             user = await client.fetch_user(user_id)
-            await user.send("You cannot be a slut for 26 seconds")
+            dm_message = to_send[second_space_index + 1:]
+            await user.send(dm_message)
 
         # One in a 5 thousand chance that u get an N-word pass
         if "" in message.content:
