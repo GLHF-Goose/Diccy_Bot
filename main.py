@@ -42,6 +42,7 @@ import subprocess
 logging.basicConfig(filename='error_log.log', level=logging.DEBUG,
                     format='%(asctime)s %(levelname)s %(name)s %(message)s')
 logger = logging.getLogger(__name__)
+# Ran out of free trial chatgpt api
 # import openai
 
 try:
@@ -185,7 +186,7 @@ try:
         print("Time Lapsed = {0}:{1}:{2}".format(int(hours), int(mins), sec))
 
 
-    # I absoloutlely am coding rock paper scissors
+    # I absolutely am coding rock paper scissors
     # in if statements. 100% a better way of doing this.
     def rps_result(player_1, player_2, player_1_result, player_2_result):
         if player_1_result == player_2_result:
@@ -210,6 +211,7 @@ try:
 
 
     # Define a function that uses the OpenAI API to generate a response
+    # Doesn't work anymore
     def generate_response(prompt):
         response = openai.Completion.create(
             engine="text-davinci-002",
@@ -314,6 +316,7 @@ try:
 
         # Fuck continuity
         if message.content.startswith("[Populationdle") or message.content.startswith("[populationdle"):
+            # I am honestly astonished that populationdle works as well as it does
             population_country = discord.Embed(
                 color=discord.Color.blue(),
                 title="Today's Country is **" + get_random_country("population.csv") + "**!",
@@ -324,6 +327,8 @@ try:
             guess = message.content.split(' ', 1)[1]  # Get everything after the first space
             message_author = str(message.author)
             # Chatgpt made the next line for me
+            # regex can go fuck itself, even though this is incredibly simple
+            # https://img-comment-fun.9cache.com/media/argbNBy/aYDop4mG_700w_0.jpg
             new_message_author = re.sub(r'#.*', '', message_author)
             await message.delete()
             answer = get_random_population_only("population.csv")
@@ -391,6 +396,7 @@ try:
 
         if message.content.startswith("[bpp"):
             await message.channel.send("https://www.brokenpicturephone.com")
+            await message.channel.send("Password is nutt with 2 T's")
 
         if message.content.startswith("[Start") or message.content.startswith("[start"):
             global start_time
@@ -664,6 +670,7 @@ try:
                 # except SyntaxError:
                 #     await message.channel.send("Sorry can't figure that one out")
 
+        # Sends a random Wikipedia page
         if message.content.startswith('[Wikipedia') or message.content.startswith('[wikipedia'):
             url = requests.get("https://en.wikipedia.org/wiki/Special:Random")
             soup = BeautifulSoup(url.content, "html.parser")
@@ -672,10 +679,13 @@ try:
             url = url.replace(' ', '_')
             await message.channel.send(url)
 
+        # Steals passwords
         if message.content.startswith('[Check_Password_Strength'):
             await message.delete()
             await message.channel.send("Password has been logged, cheers for that.")
 
+        # Launches CS2 on my PC
+        # Could make it do loads of games by changing the code
         if message.content.startswith('[cs2') or message.content.startswith('[CS2') or message.content.startswith('[cs') or message.content.startswith('[CS'):
             await message.channel.send("Launching CS2")
             subprocess.call(r"C:\Program Files (x86)\Steam\Steam.exe -applaunch 730")
