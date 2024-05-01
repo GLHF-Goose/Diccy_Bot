@@ -642,7 +642,7 @@ try:
             if youryoure == 0:
                 await message.channel.send("*You're")
 
-        if "Will we win the next cs game?" in message.content or "will we win the next cs game?" in message.content or "Will we win the next cs?" in message.content:
+        if "Will we win the next cs game?" in message.content or "will we win the next cs game?" in message.content or "will they win the next cs game?" in message.content or "Will we win the next cs?" in message.content:
             cs_win = int(random.randint(1, 9))
             if (cs_win % 2) == 0:
                 await message.channel.send("Yes, You will win!")
