@@ -289,6 +289,7 @@ try:
                         postable = True
                 await message.channel.send(url_cock)
 
+        # Should probably remove this
         if message.content.startswith("@DailySoftPorn") or message.content.startswith(
                 "@dailysoftporn") or message.content.startswith("@dailysoftporn"):
             postable = False
