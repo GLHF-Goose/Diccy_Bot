@@ -19,7 +19,8 @@ help_list = [
     "[Calculator = Does maths",
     "[Wikipedia = Gives a random wikipedia article",
     "[Check_Password_Strength = Checks the strength of your password, out of 10.",
-    "[DM (User ID) (Message) = Sends the message to the user ID"
+    "[DM (User ID) (Message) = Sends the message to the user ID",
+    "Will we win the next cs game? = Does what is says on the tin"
 ]
 
 game_list = [
