@@ -13,6 +13,7 @@
 # 1.0.27 - Added [cs that launches cs2 on my pc
 # 1.0.28 - Added DM Jake
 # 1.0.29 - Changed DM Jake to UserID
+# 1.0.30 - Added will we win cs?
 
 # ToDo - Stop Praw printing error logs.
 
@@ -633,6 +634,13 @@ try:
             youryoure = int(random.randint(0, 10))
             if youryoure == 0:
                 await message.channel.send("*You're")
+
+        if "Will we win the next cs game?" in message.content or "will we win the next cs game?" in message.content or "Will we win the next cs?" in message.content:
+            cs_win = int(random.randint(1, 9))
+            if (cs_win % 2) == 0:
+                await message.channel.send("Yes, You will win!")
+            else:
+                await message.channel.send("No")
 
         # This bit doesn't work because it crashes occasionally and resets
         # if "W I D E" in message.content:
