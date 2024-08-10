@@ -536,9 +536,9 @@ try:
         if message.content.startswith("F1 or CS") or message.content.startswith("F1 or CS?") or message.content.startswith("F1 or cs?") or message.content.startswith("f1 or cs?") or message.content.startswith("CS or F1?") or message.content.startswith("CS or F1"):
             fiftyfifty = int(random.randint(0, 1))
             if fiftyfifty == 0:
-                await message.channel.send("CS")
+                await message.channel.send("[CS")
             if fiftyfifty == 1:
-                await message.channel.send("F1")
+                await message.channel.send("[F1")
 
         if "pepsi" in message.content:
             await message.channel.send("BEPIS")
