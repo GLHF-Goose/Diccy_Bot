@@ -691,6 +691,11 @@ try:
             await message.channel.send("Launching CS2")
             subprocess.call(r"C:\Program Files (x86)\Steam\Steam.exe -applaunch 730")
 
+        # Launches F1 on my PC
+        if message.content.startswith('[F1'):
+            await message.channel.send("Launching F1")
+            subprocess.call(r"C:\Program Files (x86)\Steam\Steam.exe -applaunch 1134570")
+
 
     # Yeah I gave up
     # if message.content.startswith("[Hangman"):
