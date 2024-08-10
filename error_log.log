@@ -12725,3 +12725,403 @@ Loop thread traceback (most recent call last):
 2024-08-10 22:11:07,565 DEBUG prawcore Response: 200 (67466 bytes) (rst-531:rem-950.0:used-50 ratelimit) at 1723324267.5653071
 2024-08-10 22:11:07,840 INFO discord.gateway Shard ID None session has been invalidated.
 2024-08-10 22:11:13,315 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 5b06de79280ef574bb89f5f32794a822).
+2024-08-10 22:45:42,556 WARNING discord.client PyNaCl is not installed, voice will NOT be supported
+2024-08-10 22:45:42,653 DEBUG discord.client on_ready has successfully been registered as an event
+2024-08-10 22:45:42,653 DEBUG discord.client on_member_join has successfully been registered as an event
+2024-08-10 22:45:42,653 DEBUG discord.client on_message has successfully been registered as an event
+2024-08-10 22:45:42,654 DEBUG asyncio Using proactor: IocpProactor
+2024-08-10 22:45:42,655 INFO discord.client logging in using static token
+2024-08-10 22:45:43,523 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.239:8080
+2024-08-10 22:45:43,524 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-08-10 22:45:43,531 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 999eaa88997aba75bfeed0eb459b13e7).
+2024-08-10 22:47:00,434 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:00,435 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326420.435187
+2024-08-10 22:47:00,435 DEBUG prawcore Data: None
+2024-08-10 22:47:00,435 DEBUG prawcore Params: {'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:00,437 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): www.reddit.com:443
+2024-08-10 22:47:00,605 DEBUG urllib3.connectionpool https://www.reddit.com:443 "POST /api/v1/access_token HTTP/1.1" 200 654
+2024-08-10 22:47:00,609 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): oauth.reddit.com:443
+2024-08-10 22:47:02,088 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&raw_json=1 HTTP/1.1" 200 90996
+2024-08-10 22:47:02,180 DEBUG prawcore Response: 200 (90996 bytes) (rst-177:rem-999.0:used-1 ratelimit) at 1723326422.1805882
+2024-08-10 22:47:02,200 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:02,200 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326422.2000914
+2024-08-10 22:47:02,200 DEBUG prawcore Data: None
+2024-08-10 22:47:02,200 DEBUG prawcore Params: {'after': 't3_1ems7sd', 'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:04,029 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&after=t3_1ems7sd&raw_json=1 HTTP/1.1" 200 89477
+2024-08-10 22:47:04,117 DEBUG prawcore Response: 200 (89477 bytes) (rst-175:rem-998.0:used-2 ratelimit) at 1723326424.1178455
+2024-08-10 22:47:04,137 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:04,137 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326424.137849
+2024-08-10 22:47:04,137 DEBUG prawcore Data: None
+2024-08-10 22:47:04,138 DEBUG prawcore Params: {'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:06,014 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&raw_json=1 HTTP/1.1" 200 90988
+2024-08-10 22:47:06,186 DEBUG prawcore Response: 200 (90988 bytes) (rst-173:rem-997.0:used-3 ratelimit) at 1723326426.18661
+2024-08-10 22:47:06,205 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:06,205 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326426.2056131
+2024-08-10 22:47:06,205 DEBUG prawcore Data: None
+2024-08-10 22:47:06,205 DEBUG prawcore Params: {'after': 't3_1ems7sd', 'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:08,069 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&after=t3_1ems7sd&raw_json=1 HTTP/1.1" 200 89492
+2024-08-10 22:47:08,157 DEBUG prawcore Response: 200 (89492 bytes) (rst-171:rem-996.0:used-4 ratelimit) at 1723326428.1576061
+2024-08-10 22:47:08,177 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:08,177 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326428.1776092
+2024-08-10 22:47:08,177 DEBUG prawcore Data: None
+2024-08-10 22:47:08,177 DEBUG prawcore Params: {'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:09,372 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&raw_json=1 HTTP/1.1" 200 90960
+2024-08-10 22:47:09,528 DEBUG prawcore Response: 200 (90960 bytes) (rst-169:rem-995.0:used-5 ratelimit) at 1723326429.528071
+2024-08-10 22:47:09,546 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:09,546 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326429.5465739
+2024-08-10 22:47:09,546 DEBUG prawcore Data: None
+2024-08-10 22:47:09,547 DEBUG prawcore Params: {'after': 't3_1ems7sd', 'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:10,794 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&after=t3_1ems7sd&raw_json=1 HTTP/1.1" 200 89447
+2024-08-10 22:47:10,875 DEBUG prawcore Response: 200 (89447 bytes) (rst-168:rem-994.0:used-6 ratelimit) at 1723326430.875654
+2024-08-10 22:47:10,897 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:10,897 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326430.897658
+2024-08-10 22:47:10,897 DEBUG prawcore Data: None
+2024-08-10 22:47:10,898 DEBUG prawcore Params: {'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:12,440 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&raw_json=1 HTTP/1.1" 200 90951
+2024-08-10 22:47:12,523 DEBUG prawcore Response: 200 (90951 bytes) (rst-167:rem-993.0:used-7 ratelimit) at 1723326432.5236418
+2024-08-10 22:47:12,541 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:12,541 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326432.5411446
+2024-08-10 22:47:12,541 DEBUG prawcore Data: None
+2024-08-10 22:47:12,541 DEBUG prawcore Params: {'after': 't3_1ems7sd', 'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:13,919 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&after=t3_1ems7sd&raw_json=1 HTTP/1.1" 200 89514
+2024-08-10 22:47:14,001 DEBUG prawcore Response: 200 (89514 bytes) (rst-165:rem-992.0:used-8 ratelimit) at 1723326434.0015452
+2024-08-10 22:47:14,020 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:14,020 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326434.0205495
+2024-08-10 22:47:14,020 DEBUG prawcore Data: None
+2024-08-10 22:47:14,020 DEBUG prawcore Params: {'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:15,465 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&raw_json=1 HTTP/1.1" 200 90964
+2024-08-10 22:47:15,547 DEBUG prawcore Response: 200 (90964 bytes) (rst-164:rem-991.0:used-9 ratelimit) at 1723326435.5475898
+2024-08-10 22:47:15,562 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:15,562 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326435.5625925
+2024-08-10 22:47:15,562 DEBUG prawcore Data: None
+2024-08-10 22:47:15,563 DEBUG prawcore Params: {'after': 't3_1ems7sd', 'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:15,926 WARNING discord.gateway Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\main.py", line 714, in <module>
+    client.run(key.key)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\discord\client.py", line 860, in run
+    asyncio.run(runner())
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1890, in _run_once
+    handle._run()
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\main.py", line 269, in on_message
+    img_chance_1()
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\main.py", line 92, in img_chance_1
+    for submission in hot:
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\praw\models\listing\generator.py", line 63, in __next__
+    self._next_batch()
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\praw\models\listing\generator.py", line 89, in _next_batch
+    self._listing = self._reddit.get(self.url, params=self.params)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\praw\util\deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\praw\reddit.py", line 712, in get
+    return self._objectify_request(method="GET", params=params, path=path)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\praw\reddit.py", line 517, in _objectify_request
+    self.request(
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\praw\util\deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\praw\reddit.py", line 941, in request
+    return self._core.request(
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\prawcore\sessions.py", line 328, in request
+    return self._request_with_retries(
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\prawcore\sessions.py", line 234, in _request_with_retries
+    response, saved_exception = self._make_request(
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\prawcore\sessions.py", line 186, in _make_request
+    response = self._rate_limiter.call(
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\prawcore\rate_limit.py", line 47, in call
+    response = request_function(*args, **kwargs)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\prawcore\requestor.py", line 68, in request
+    return self._http.request(*args, timeout=timeout or self.timeout, **kwargs)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\urllib3\connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\urllib3\connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1371, in getresponse
+    response.begin()
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+
+2024-08-10 22:47:16,782 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&after=t3_1ems7sd&raw_json=1 HTTP/1.1" 200 89477
+2024-08-10 22:47:16,862 DEBUG prawcore Response: 200 (89477 bytes) (rst-162:rem-990.0:used-10 ratelimit) at 1723326436.8626008
+2024-08-10 22:47:16,878 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:16,878 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326436.8781037
+2024-08-10 22:47:16,878 DEBUG prawcore Data: None
+2024-08-10 22:47:16,878 DEBUG prawcore Params: {'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:18,519 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&raw_json=1 HTTP/1.1" 200 90960
+2024-08-10 22:47:18,600 DEBUG prawcore Response: 200 (90960 bytes) (rst-161:rem-989.0:used-11 ratelimit) at 1723326438.6001048
+2024-08-10 22:47:18,615 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:18,615 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326438.6151073
+2024-08-10 22:47:18,615 DEBUG prawcore Data: None
+2024-08-10 22:47:18,615 DEBUG prawcore Params: {'after': 't3_1ems7sd', 'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:20,068 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&after=t3_1ems7sd&raw_json=1 HTTP/1.1" 200 89510
+2024-08-10 22:47:20,151 DEBUG prawcore Response: 200 (89510 bytes) (rst-159:rem-988.0:used-12 ratelimit) at 1723326440.151115
+2024-08-10 22:47:20,167 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:20,167 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326440.167117
+2024-08-10 22:47:20,167 DEBUG prawcore Data: None
+2024-08-10 22:47:20,167 DEBUG prawcore Params: {'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:21,675 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&raw_json=1 HTTP/1.1" 200 90946
+2024-08-10 22:47:21,756 DEBUG prawcore Response: 200 (90946 bytes) (rst-157:rem-987.0:used-13 ratelimit) at 1723326441.7566102
+2024-08-10 22:47:21,769 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:21,770 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326441.770113
+2024-08-10 22:47:21,770 DEBUG prawcore Data: None
+2024-08-10 22:47:21,770 DEBUG prawcore Params: {'after': 't3_1ems7sd', 'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:23,226 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&after=t3_1ems7sd&raw_json=1 HTTP/1.1" 200 89444
+2024-08-10 22:47:23,303 DEBUG prawcore Response: 200 (89444 bytes) (rst-156:rem-986.0:used-14 ratelimit) at 1723326443.3035622
+2024-08-10 22:47:23,319 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:23,319 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326443.3190646
+2024-08-10 22:47:23,319 DEBUG prawcore Data: None
+2024-08-10 22:47:23,319 DEBUG prawcore Params: {'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:24,452 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&raw_json=1 HTTP/1.1" 200 90929
+2024-08-10 22:47:24,535 DEBUG prawcore Response: 200 (90929 bytes) (rst-154:rem-985.0:used-15 ratelimit) at 1723326444.535098
+2024-08-10 22:47:24,576 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 22:47:24,576 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723326444.5761063
+2024-08-10 22:47:24,576 DEBUG prawcore Data: None
+2024-08-10 22:47:24,576 DEBUG prawcore Params: {'after': 't3_1ems7sd', 'limit': 200, 'raw_json': 1}
+2024-08-10 22:47:25,941 WARNING discord.gateway Shard ID None heartbeat blocked for more than 20 seconds.
+Loop thread traceback (most recent call last):
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\main.py", line 714, in <module>
+    client.run(key.key)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\discord\client.py", line 860, in run
+    asyncio.run(runner())
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 629, in run_until_complete
+    self.run_forever()
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 596, in run_forever
+    self._run_once()
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1890, in _run_once
+    handle._run()
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\main.py", line 269, in on_message
+    img_chance_1()
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\main.py", line 92, in img_chance_1
+    for submission in hot:
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\praw\models\listing\generator.py", line 63, in __next__
+    self._next_batch()
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\praw\models\listing\generator.py", line 89, in _next_batch
+    self._listing = self._reddit.get(self.url, params=self.params)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\praw\util\deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\praw\reddit.py", line 712, in get
+    return self._objectify_request(method="GET", params=params, path=path)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\praw\reddit.py", line 517, in _objectify_request
+    self.request(
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\praw\util\deprecate_args.py", line 43, in wrapped
+    return func(**dict(zip(_old_args, args)), **kwargs)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\praw\reddit.py", line 941, in request
+    return self._core.request(
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\prawcore\sessions.py", line 328, in request
+    return self._request_with_retries(
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\prawcore\sessions.py", line 234, in _request_with_retries
+    response, saved_exception = self._make_request(
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\prawcore\sessions.py", line 186, in _make_request
+    response = self._rate_limiter.call(
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\prawcore\rate_limit.py", line 47, in call
+    response = request_function(*args, **kwargs)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\prawcore\requestor.py", line 68, in request
+    return self._http.request(*args, timeout=timeout or self.timeout, **kwargs)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\urllib3\connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\urllib3\connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1371, in getresponse
+    response.begin()
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\ryrob\AppData\Local\Programs\Python\Python39\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+
+2024-08-10 22:47:26,107 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&after=t3_1ems7sd&raw_json=1 HTTP/1.1" 200 89461
+2024-08-10 22:47:26,187 DEBUG prawcore Response: 200 (89461 bytes) (rst-153:rem-984.0:used-16 ratelimit) at 1723326446.1876104
+2024-08-10 22:47:26,208 ERROR discord.client Attempting a reconnect in 0.56s
+Traceback (most recent call last):
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\discord\client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\discord\gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2024-08-10 22:47:27,065 INFO discord.gateway Shard ID None has successfully RESUMED session 999eaa88997aba75bfeed0eb459b13e7.
+2024-08-10 23:00:23,352 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 23:00:23,353 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723327223.3530655
+2024-08-10 23:00:23,353 DEBUG prawcore Data: None
+2024-08-10 23:00:23,353 DEBUG prawcore Params: {'limit': 200, 'raw_json': 1}
+2024-08-10 23:00:23,355 DEBUG urllib3.connectionpool Resetting dropped connection: oauth.reddit.com
+2024-08-10 23:00:25,302 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&raw_json=1 HTTP/1.1" 200 90922
+2024-08-10 23:00:25,396 DEBUG prawcore Response: 200 (90922 bytes) (rst-574:rem-999.0:used-1 ratelimit) at 1723327225.3969982
+2024-08-10 23:00:25,415 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 23:00:25,416 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723327225.4160016
+2024-08-10 23:00:25,416 DEBUG prawcore Data: None
+2024-08-10 23:00:25,416 DEBUG prawcore Params: {'after': 't3_1ems7sd', 'limit': 200, 'raw_json': 1}
+2024-08-10 23:00:27,262 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&after=t3_1ems7sd&raw_json=1 HTTP/1.1" 200 89487
+2024-08-10 23:00:27,350 DEBUG prawcore Response: 200 (89487 bytes) (rst-572:rem-998.0:used-2 ratelimit) at 1723327227.3506129
+2024-08-10 23:00:27,371 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 23:00:27,371 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723327227.3716168
+2024-08-10 23:00:27,371 DEBUG prawcore Data: None
+2024-08-10 23:00:27,371 DEBUG prawcore Params: {'limit': 200, 'raw_json': 1}
+2024-08-10 23:00:28,761 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&raw_json=1 HTTP/1.1" 200 90955
+2024-08-10 23:00:28,931 DEBUG prawcore Response: 200 (90955 bytes) (rst-570:rem-997.0:used-3 ratelimit) at 1723327228.9316099
+2024-08-10 23:00:28,948 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 23:00:28,948 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723327228.948113
+2024-08-10 23:00:28,948 DEBUG prawcore Data: None
+2024-08-10 23:00:28,948 DEBUG prawcore Params: {'after': 't3_1ems7sd', 'limit': 200, 'raw_json': 1}
+2024-08-10 23:00:30,465 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&after=t3_1ems7sd&raw_json=1 HTTP/1.1" 200 89496
+2024-08-10 23:00:30,555 DEBUG prawcore Response: 200 (89496 bytes) (rst-569:rem-996.0:used-4 ratelimit) at 1723327230.5556068
+2024-08-10 23:00:30,573 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 23:00:30,573 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723327230.5731087
+2024-08-10 23:00:30,573 DEBUG prawcore Data: None
+2024-08-10 23:00:30,573 DEBUG prawcore Params: {'limit': 200, 'raw_json': 1}
+2024-08-10 23:00:32,225 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&raw_json=1 HTTP/1.1" 200 90911
+2024-08-10 23:00:32,310 DEBUG prawcore Response: 200 (90911 bytes) (rst-567:rem-995.0:used-5 ratelimit) at 1723327232.3100922
+2024-08-10 23:00:32,328 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 23:00:32,329 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723327232.3290954
+2024-08-10 23:00:32,329 DEBUG prawcore Data: None
+2024-08-10 23:00:32,329 DEBUG prawcore Params: {'after': 't3_1ems7sd', 'limit': 200, 'raw_json': 1}
+2024-08-10 23:00:33,613 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&after=t3_1ems7sd&raw_json=1 HTTP/1.1" 200 89479
+2024-08-10 23:00:33,770 DEBUG prawcore Response: 200 (89479 bytes) (rst-565:rem-994.0:used-6 ratelimit) at 1723327233.770612
+2024-08-10 23:00:33,789 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 23:00:33,789 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723327233.7896152
+2024-08-10 23:00:33,789 DEBUG prawcore Data: None
+2024-08-10 23:00:33,789 DEBUG prawcore Params: {'limit': 200, 'raw_json': 1}
+2024-08-10 23:00:35,123 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&raw_json=1 HTTP/1.1" 200 90901
+2024-08-10 23:00:35,207 DEBUG prawcore Response: 200 (90901 bytes) (rst-564:rem-993.0:used-7 ratelimit) at 1723327235.2071145
+2024-08-10 23:00:35,223 WARNING praw It appears that you are using PRAW in an asynchronous environment.
+It is strongly recommended to use Async PRAW: https://asyncpraw.readthedocs.io.
+See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.html#discord-bots-and-asynchronous-environments for more info.
+
+2024-08-10 23:00:35,223 DEBUG prawcore Fetching: GET https://oauth.reddit.com/r/newyorknine/hot at 1723327235.2236173
+2024-08-10 23:00:35,224 DEBUG prawcore Data: None
+2024-08-10 23:00:35,224 DEBUG prawcore Params: {'after': 't3_1ems7sd', 'limit': 200, 'raw_json': 1}
+2024-08-10 23:00:37,223 DEBUG urllib3.connectionpool https://oauth.reddit.com:443 "GET /r/newyorknine/hot?limit=200&after=t3_1ems7sd&raw_json=1 HTTP/1.1" 200 89484
+2024-08-10 23:00:37,307 DEBUG prawcore Response: 200 (89484 bytes) (rst-562:rem-992.0:used-8 ratelimit) at 1723327237.3076093
+2024-08-10 23:49:54,171 WARNING discord.client PyNaCl is not installed, voice will NOT be supported
+2024-08-10 23:49:54,174 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): pypi.org:443
+2024-08-10 23:49:54,241 DEBUG urllib3.connectionpool https://pypi.org:443 "GET /pypi/praw/json HTTP/1.1" 200 35676
+2024-08-10 23:49:54,423 DEBUG discord.client on_ready has successfully been registered as an event
+2024-08-10 23:49:54,423 DEBUG discord.client on_member_join has successfully been registered as an event
+2024-08-10 23:49:54,423 DEBUG discord.client on_message has successfully been registered as an event
+2024-08-10 23:49:54,423 DEBUG asyncio Using proactor: IocpProactor
+2024-08-10 23:49:54,424 INFO discord.client logging in using static token
+2024-08-10 23:49:55,295 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.239:8080
+2024-08-10 23:49:55,296 INFO werkzeug [33mPress CTRL+C to quit[0m
+2024-08-10 23:49:56,363 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: c8c2f669951197ffa55ad8a28c2c2d7b).

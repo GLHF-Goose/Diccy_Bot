@@ -14,6 +14,7 @@
 # 1.0.28 - Added DM Jake
 # 1.0.29 - Changed DM Jake to UserID
 # 1.0.30 - Added will we win cs?
+# 1.0.31 - Minor changes, added [F1
 
 # ToDo - Stop Praw printing error logs.
 
