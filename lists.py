@@ -20,7 +20,8 @@ help_list = [
     "[Wikipedia = Gives a random wikipedia article",
     "[Check_Password_Strength = Checks the strength of your password, out of 10.",
     "[DM (User ID) (Message) = Sends the message to the user ID",
-    "Will we win the next cs game? = Does what is says on the tin"
+    "Will we win the next cs game? = Does what is says on the tin",
+    "[RobCheck = Checks Robs current status"
 ]
 
 game_list = [
