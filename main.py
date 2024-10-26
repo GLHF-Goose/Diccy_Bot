@@ -15,6 +15,7 @@
 # 1.0.29 - Changed DM Jake to UserID
 # 1.0.30 - Added will we win cs?
 # 1.0.31 - Minor changes, added [F1
+# 1.0.32 - Added [RobCheck
 
 # ToDo - Stop Praw printing error logs.
 
@@ -312,6 +313,13 @@ try:
                 await message.channel.send("Yes")
             if fiftyfifty == 1:
                 await message.channel.send("No")
+
+        if message.content.startswith("[Robcheck") or message.content.startswith("[RobCheck") or message.content.startswith("[robcheck"):
+            fiftyfifty = int(random.randint(0, 1))
+            if fiftyfifty == 0:
+                await message.channel.send("In the bath")
+            if fiftyfifty == 1:
+                await message.channel.send("Not in the bath")
 
         if message.content.startswith("[2"):
             await message.channel.send("Please mute this channel")
