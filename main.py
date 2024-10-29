@@ -315,11 +315,15 @@ try:
                 await message.channel.send("No")
 
         if message.content.startswith("[Robcheck") or message.content.startswith("[RobCheck") or message.content.startswith("[robcheck"):
-            fiftyfifty = int(random.randint(0, 1))
+            fiftyfifty = int(random.randint(0, 6))
             if fiftyfifty == 0:
-                await message.channel.send("In the bath")
+                await message.channel.send("At church")
             if fiftyfifty == 1:
                 await message.channel.send("Not in the bath")
+            if fiftyfifty == 2 or fiftyfifty == 3:
+                await message.channel.send("In a family meeting")
+            if fiftyfifty == 4 or fiftyfifty == 5 or fiftyfifty == 6:
+                await message.channel.send("In the bath")
 
         if message.content.startswith("[2"):
             await message.channel.send("Please mute this channel")
