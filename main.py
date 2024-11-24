@@ -337,7 +337,7 @@ try:
                 description=' \n Use the [Guess command to guess the population.')
             await message.channel.send(embed=population_country)
 
-        if message.content.startswith('[guess') or message.content.startswith('[Guess'):
+        if message.content.startswith('[guess') or message.content.startswith('[Guess') or message.content.startswith('[GUESS'):
             guess = message.content.split(' ', 1)[1]  # Get everything after the first space
             message_author = str(message.author)
             # Chatgpt made the next line for me
