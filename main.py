@@ -16,6 +16,7 @@
 # 1.0.30 - Added will we win cs?
 # 1.0.31 - Minor changes, added [F1
 # 1.0.32 - Added [RobCheck
+# 1.0.33 - Updated [guess to take all caps
 
 # ToDo - Stop Praw printing error logs.
 
