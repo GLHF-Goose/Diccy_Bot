@@ -21,7 +21,9 @@ help_list = [
     "[Check_Password_Strength = Checks the strength of your password, out of 10.",
     "[DM (User ID) (Message) = Sends the message to the user ID",
     "Will we win the next cs game? = Does what is says on the tin",
-    "[RobCheck = Checks Robs current status"
+    "[RobCheck = Checks Robs current status",
+    "[bpp = Sends the broken picture phone link",
+    "[Timer x = Starts a timer for x number of seconds"
 ]
 
 game_list = [

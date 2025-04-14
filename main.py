@@ -319,9 +319,7 @@ try:
             fiftyfifty = int(random.randint(0, 6))
             if fiftyfifty == 0:
                 await message.channel.send("At church")
-            if fiftyfifty == 1:
-                await message.channel.send("Not in the bath")
-            if fiftyfifty == 2 or fiftyfifty == 3:
+            if fiftyfifty == 2 or fiftyfifty == 3 or fiftyfifty == 1:
                 await message.channel.send("In a family meeting")
             if fiftyfifty == 4 or fiftyfifty == 5 or fiftyfifty == 6:
                 await message.channel.send("In the bath")
@@ -336,6 +334,7 @@ try:
                 color=discord.Color.blue(),
                 title="Today's Country is **" + get_random_country("population.csv") + "**!",
                 description=' \n Use the [Guess command to guess the population.')
+            await message.delete()
             await message.channel.send(embed=population_country)
 
         if message.content.startswith('[guess') or message.content.startswith('[Guess') or message.content.startswith('[GUESS'):
@@ -377,10 +376,22 @@ try:
                 "This is a pro Ukrainian bot."
             )
 
-# Possibly makes an infinite messaging loop
+        # Possibly makes an infinite messaging loop
         if message.content.startswith('[Repeatafterme'):
             to_repeat = message.content.split(' ', 1)[1]  # Get everything after the first space
             await message.channel.send(to_repeat)
+
+        # Starts a timer
+        if message.content.startswith('[Timer') or message.content.startswith('[timer'):
+            timer_time = message.content.split(' ', 1)[1]
+            try:
+                timer_time = int(timer_time)
+                await message.delete()
+                time.sleep(timer_time)
+                timer_msg = str(timer_time) + " seconds is over!"
+                await message.channel.send(timer_msg)
+            except ValueError:
+                await message.channel.send("That is not a number you imbecile")
 
         if "Ukraine" in message.content or "ukraine" in message.content:
             await message.channel.send(
@@ -410,6 +421,7 @@ try:
             await message.channel.send(game_list)
 
         if message.content.startswith("[bpp"):
+            await message.delete()
             await message.channel.send("https://www.brokenpicturephone.com")
             await message.channel.send("Password is nutt with 2 T's")
 
