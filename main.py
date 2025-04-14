@@ -17,6 +17,7 @@
 # 1.0.31 - Minor changes, added [F1
 # 1.0.32 - Added [RobCheck
 # 1.0.33 - Updated [guess to take all caps
+# 1.0.34 - Added help items and a timer
 
 # ToDo - Stop Praw printing error logs.
 
