@@ -737,7 +737,8 @@ try:
 
     keep_alive()
 # Key is in a separate file stored locally so y'all can't steal it from github
-    import key
+    # import key
+    key = os.environment['key']
     client.run(key.key)
 
 # This whole ass things runs in a try loop,
