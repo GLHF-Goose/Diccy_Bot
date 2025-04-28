@@ -25,7 +25,7 @@ import pandas as pd
 import os
 import sys
 
-import key
+# import key
 from keep_alive import keep_alive
 from lists import game_list
 from lists import help_list
