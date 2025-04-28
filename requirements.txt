@@ -1,0 +1,10 @@
+pandas~=2.1.4
+praw~=7.7.1
+pytz~=2023.3.post1
+discord~=2.3.2
+requests~=2.31.0
+DateTime~=5.3
+bs4~=0.0.1
+beautifulsoup4~=4.12.2
+numpy~=1.26.2
+flask~=3.0.0
