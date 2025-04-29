@@ -7,8 +7,10 @@ app = Flask('')
 def home():
     return "Hello. I am alive!"
 
-def run():
-  app.run(host='0.0.0.0',port=os.environment['PORT'])
+port=os.environment['PORT']
+
+#def run():
+#  app.run(host='0.0.0.0',port=os.environment['PORT'])
 
 def keep_alive():
     t = Thread(target=run)
