@@ -8,7 +8,7 @@ app = Flask('')
 def home():
     return "Hello. I am alive!"
 
-port=os.environment['PORT']
+port=os.environ['PORT']
 
 #def run():
 #  app.run(host='0.0.0.0',port=os.environment['PORT'])
