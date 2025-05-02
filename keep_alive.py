@@ -15,7 +15,7 @@ def run():
 
 def keep_alive():
     run()
-    #print("Keeping alive")
-    #t = Thread(target=run)
-    #t.start()
-    #print("Started thread")
+    print("Keeping alive")
+    t = Thread(target=run)
+    t.start()
+    print("Started thread")
