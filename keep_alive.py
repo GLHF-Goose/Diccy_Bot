@@ -14,7 +14,8 @@ def run():
     app.run(host='0.0.0.0',port=os.environ['PORT'])
 
 def keep_alive():
-    print("Keeping alive")
-    t = Thread(target=run)
-    t.start()
-    print("Started thread")
+    run()
+    #print("Keeping alive")
+    #t = Thread(target=run)
+    #t.start()
+    #print("Started thread")
