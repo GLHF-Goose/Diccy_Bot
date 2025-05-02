@@ -6659,3 +6659,22 @@ See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.htm
  * Running on http://127.0.0.1:8080
  * Running on http://192.168.1.239:8080
 2025-04-28 22:21:04,106 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-02 21:51:15,318 WARNING discord.client PyNaCl is not installed, voice will NOT be supported
+2025-05-02 21:51:15,320 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): pypi.org:443
+2025-05-02 21:51:15,451 DEBUG urllib3.connectionpool https://pypi.org:443 "GET /pypi/praw/json HTTP/1.1" 200 36290
+2025-05-02 21:51:17,505 DEBUG discord.client on_ready has successfully been registered as an event
+2025-05-02 21:51:17,505 DEBUG discord.client on_member_join has successfully been registered as an event
+2025-05-02 21:51:17,505 DEBUG discord.client on_message has successfully been registered as an event
+2025-05-02 21:51:18,790 WARNING discord.client PyNaCl is not installed, voice will NOT be supported
+2025-05-02 21:56:47,966 WARNING discord.client PyNaCl is not installed, voice will NOT be supported
+2025-05-02 21:56:48,037 DEBUG discord.client on_ready has successfully been registered as an event
+2025-05-02 21:56:48,037 DEBUG discord.client on_member_join has successfully been registered as an event
+2025-05-02 21:56:48,037 DEBUG discord.client on_message has successfully been registered as an event
+2025-05-02 21:56:48,041 DEBUG asyncio Using proactor: IocpProactor
+2025-05-02 21:56:48,044 INFO discord.client logging in using static token
+2025-05-02 21:56:48,069 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.239:8080
+2025-05-02 21:56:48,069 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-02 21:56:48,956 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 4a1560650c5f6f509400a33fe58ab46d).
