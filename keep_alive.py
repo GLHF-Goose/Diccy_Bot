@@ -1,3 +1,4 @@
+
 from flask import Flask
 from threading import Thread
 import os
@@ -12,6 +13,7 @@ def run():
     print("Running on port:")
     print(os.environ['PORT'])
     app.run(host='0.0.0.0',port=os.environ['PORT'])
+    print("Port created.")
 
 def keep_alive():
     run()
