@@ -739,7 +739,9 @@ try:
 # Key is in a separate file stored locally so y'all can't steal it from github
     # import key
     key = os.environ['key']
+    print("Here")
     client.run(key.key)
+    print("Run client")
 
 # This whole ass things runs in a try loop,
 # If there is an error the bot just restarts itself
