@@ -735,7 +735,7 @@ try:
     # This is a joke, I was never ever selling your information to amazon
     # aws = aws.Send.AllData
 
-    keep_alive()
+    # keep_alive()
 # Key is in a separate file stored locally so y'all can't steal it from github
     # import key
     key = os.environ['key']
