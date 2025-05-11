@@ -6678,3 +6678,41 @@ See https://praw.readthedocs.io/en/latest/getting_started/multiple_instances.htm
  * Running on http://192.168.1.239:8080
 2025-05-02 21:56:48,069 INFO werkzeug [33mPress CTRL+C to quit[0m
 2025-05-02 21:56:48,956 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 4a1560650c5f6f509400a33fe58ab46d).
+2025-05-02 23:37:45,286 ERROR discord.client Attempting a reconnect in 0.53s
+Traceback (most recent call last):
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\discord\client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\discord\gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2025-05-02 23:37:46,122 INFO discord.gateway Shard ID None has successfully RESUMED session 4a1560650c5f6f509400a33fe58ab46d.
+2025-05-03 00:10:47,684 ERROR discord.client Attempting a reconnect in 1.59s
+Traceback (most recent call last):
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\discord\client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "C:\Users\ryrob\Documents\Things\Python\Diccy_Bot\venv\lib\site-packages\discord\gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2025-05-03 00:10:49,531 INFO discord.gateway Shard ID None has successfully RESUMED session 4a1560650c5f6f509400a33fe58ab46d.
+2025-05-11 14:33:04,338 WARNING discord.client PyNaCl is not installed, voice will NOT be supported
+2025-05-11 14:33:04,344 DEBUG urllib3.connectionpool Starting new HTTPS connection (1): pypi.org:443
+2025-05-11 14:33:04,884 DEBUG urllib3.connectionpool https://pypi.org:443 "GET /pypi/praw/json HTTP/1.1" 200 36290
+2025-05-11 14:33:07,896 DEBUG discord.client on_ready has successfully been registered as an event
+2025-05-11 14:33:07,896 DEBUG discord.client on_member_join has successfully been registered as an event
+2025-05-11 14:33:07,896 DEBUG discord.client on_message has successfully been registered as an event
+2025-05-11 14:33:09,289 WARNING discord.client PyNaCl is not installed, voice will NOT be supported
+2025-05-11 14:33:33,856 WARNING discord.client PyNaCl is not installed, voice will NOT be supported
+2025-05-11 14:33:33,927 DEBUG discord.client on_ready has successfully been registered as an event
+2025-05-11 14:33:33,927 DEBUG discord.client on_member_join has successfully been registered as an event
+2025-05-11 14:33:33,927 DEBUG discord.client on_message has successfully been registered as an event
+2025-05-11 14:33:35,349 WARNING discord.client PyNaCl is not installed, voice will NOT be supported
+2025-05-11 14:34:18,537 WARNING discord.client PyNaCl is not installed, voice will NOT be supported
+2025-05-11 14:34:18,606 DEBUG discord.client on_ready has successfully been registered as an event
+2025-05-11 14:34:18,606 DEBUG discord.client on_member_join has successfully been registered as an event
+2025-05-11 14:34:18,606 DEBUG discord.client on_message has successfully been registered as an event
+2025-05-11 14:34:19,873 WARNING discord.client PyNaCl is not installed, voice will NOT be supported
+2025-05-11 14:37:33,414 WARNING discord.client PyNaCl is not installed, voice will NOT be supported
+2025-05-11 14:37:33,483 DEBUG discord.client on_ready has successfully been registered as an event
+2025-05-11 14:37:33,483 DEBUG discord.client on_member_join has successfully been registered as an event
+2025-05-11 14:37:33,483 DEBUG discord.client on_message has successfully been registered as an event
+2025-05-11 14:37:34,755 WARNING discord.client PyNaCl is not installed, voice will NOT be supported
